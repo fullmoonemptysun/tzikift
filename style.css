@@ -281,7 +281,7 @@ table.contacts,table.contacts td {
 	border: none;
 }
 
-@media only screen and (max-width:378px){
+@media only screen and (max-width:500px){
 	.contact-card {
 		padding: 32px;
 	}
