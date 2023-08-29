@@ -1,0 +1,291 @@
+
+
+/*GENERAL---------*/
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.navbar-custom {
+	background-color: greenyellow !important;
+}
+
+.nav-item {
+	transition: all 0.3s !important;
+
+
+}
+
+footer {
+	background-color: greenyellow;
+}
+
+
+h1,h2,h3,h4,h5 {
+	font-family: 'Merriweather', serif;
+}
+
+
+
+
+
+.logoname{
+	font-size: 25px;
+	margin-left: 5px;
+	font-family: 'Phudu', cursive;
+}
+
+.cover{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-top: 5px;
+	background: url(coverimg.jpg) no-repeat center center fixed;
+	background-size: cover;
+	height: 75vh !important;
+
+}
+
+.overlay {
+
+	display: flex;
+	
+	justify-content: center;
+	align-items: center;
+
+
+	background-color: rgba(0,0,0,0.7);
+	height: 75vh;
+
+	color: greenyellow;
+}
+
+@media only screen and (min-width:992px){
+	.overlay {
+		flex-direction: column;
+	}
+
+	.nav-item:hover {
+	border-bottom: 1px solid darkseagreen;
+	}
+
+
+}
+
+
+
+h1 {
+	margin: 8px;
+	
+}
+
+
+p {
+	
+	
+	margin: 5px;
+
+}
+
+
+
+.highlights {
+
+	background-color: black;
+	margin-top: 2px;
+	padding: 10px;
+
+	text-align: center;
+	color: greenyellow;
+
+}
+
+
+.grid-wrapper {
+	display: grid;
+	grid-gap: 5px;
+
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+
+}
+
+
+.box>img {
+	width: 100%;
+	transition: all 0.3s;
+
+
+}
+
+.box>img:hover {
+	transform: scale(1.07);
+}
+
+
+a.coverlink {
+	color: lightseagreen;
+	font-weight: bolder;
+}
+
+
+footer {
+	text-align: center;
+	margin-top: auto;
+	
+
+}
+
+.socials {
+	list-style: none;
+	
+}
+
+li {
+	display: inline-block;
+	margin: 5px;
+}
+
+
+
+
+
+
+
+/*SCHEDULE------*/
+
+.schedule {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+
+table,th,td {
+	border: 1px solid black;
+	font-size: 22px;
+	text-align: center;
+	padding: 10px;
+	font-family: 'Noto Sans', sans-serif;
+
+}
+
+
+
+a.rsvp {
+	background: linear-gradient(#000000, #adff2f);
+	text-decoration: none;
+	color: whitesmoke;
+	padding: 3px;
+	border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 500px){
+	table,th,td {
+		font-size: 20px;
+		padding: 5px;
+
+	}
+
+	a.rsvp {
+		background: none;
+		color: grey;
+		text-decoration: underline;
+	}
+
+	table {
+		margin: 3px;
+	}
+}
+
+
+/*-----ABOUT US---*/
+
+.underlay {
+	background: url(about_coverbg.jpeg) no-repeat center center fixed;
+	background-size: cover;
+	margin-top: 5px;
+}
+
+.about {
+	text-align: center;
+	margin-top: 8px;
+	background-color: rgba(0,0,0,0.7);
+	color: greenyellow;
+}
+
+.minoimg {
+	float: left;
+	margin: 8px;
+}
+
+@media only screen and (max-width:378px){
+	.minoimg {
+		float: none;
+		margin: 8px;
+	}
+}
+
+.minoimg2 {
+	float: right;
+	margin: 8px;
+}
+
+.about-text {
+	text-align: left;
+	line-height: 24px;
+	margin: 8px;
+}
+
+
+figcaption {
+	font-weight: bold;
+
+}
+
+h1.about_heading {
+	border-bottom: 2px solid greenyellow;
+	width: 400px;
+	margin: 0 auto;
+	padding: 8px;
+}
+
+
+
+/*------CONTACT US----*/
+
+.contact {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 5px;
+	background-color: rgba(0,0,0,0.7);
+	color: greenyellow;
+	padding: 20px;
+	height: 75vh;
+}
+
+.contact-card {
+	border-radius: 20px;
+	background-color: greenyellow;
+	margin: 20px;
+	padding: 130px;
+	color: rgb(0,0,0);
+}
+
+table.contacts,table.contacts td {
+	border: none;
+}
+
+@media only screen and (max-width:378px){
+	.contact-card {
+		padding: 32px;
+	}
+}
+
+
+
